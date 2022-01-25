@@ -1,0 +1,18 @@
+{
+    "Body":{
+        "stkCallback":{
+            "MerchantRequestID":"27544-7546653-1",
+            "CheckoutRequestID":"ws_CO_250120221523352508",
+            "ResultCode":0,
+            "ResultDesc":"The service request is processed successfully.",
+            "CallbackMetadata":{
+                "Item":[
+                    {"Name":"Amount","Value":1.00},
+                    {"Name":"MpesaReceiptNumber","Value":"QAP24SAW80"},
+                    {"Name":"TransactionDate","Value":20220125152526},
+                    {"Name":"PhoneNumber","Value":254729170437}
+                ]
+            }
+        }
+    }
+}

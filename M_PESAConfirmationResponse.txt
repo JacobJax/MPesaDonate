@@ -1,0 +1,3 @@
+{"Body":{"stkCallback":{"MerchantRequestID":"5279-2693197-1","CheckoutRequestID":"ws_CO_250120221936525017","ResultCode":1037,"ResultDesc":"DS timeout."}}}{"Body":{"stkCallback":{"MerchantRequestID":"120246-8730950-1","CheckoutRequestID":"ws_CO_250120221939489953","ResultCode":1032,"ResultDesc":"Request cancelled by user"}}}
+{"Body":{"stkCallback":{"MerchantRequestID":"14707-3144720-1","CheckoutRequestID":"ws_CO_250120222028022906","ResultCode":1037,"ResultDesc":"DS timeout."}}}{"Body":{"stkCallback":{"MerchantRequestID":"120256-8898501-1","CheckoutRequestID":"ws_CO_250120222031321521","ResultCode":1032,"ResultDesc":"Request cancelled by user"}}}
+'cascadia code'
