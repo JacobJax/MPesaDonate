@@ -8,6 +8,8 @@
     <title>Mpesa donate</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
     
     <style>
@@ -31,9 +33,22 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
   </head>
-  <body class="text-center">
-    
+  <body class="text-center">   
         <form class="form-signin" method="POST" action="stk_initiate.php">
+          <?php session_start() ?>
+          <?php $message=""; ?>
+          <?php 
+              if(isset($_SESSION['flash_message'])) {
+                $message = $_SESSION['flash_message'];
+                unset($_SESSION['flash_message']);
+                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Message: </strong>'. $message .' <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>';
+              }
+          ?>
+            
             <h1 class="h3 mb-3 font-weight-normal">Enter amount to donate</h1>
             <label for="amount" class="sr-only">Amount</label>
             <input type="number" name="amnt" class="form-control" placeholder="Amount." required autofocus>
