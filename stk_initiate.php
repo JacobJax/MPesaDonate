@@ -20,9 +20,9 @@
             "PartyA"=> $phone,
             "PartyB"=> 174379,
             "PhoneNumber"=> $phone,
-            "CallBackURL"=> "https://edee-41-80-7-3.ngrok.io/New%20folder/callback.php",
+            "CallBackURL"=> "https://mpesa-donate.herokuapp.com/callback.php",
             "AccountReference"=> "CompanyXLTD",
-            "TransactionDesc"=> "Payment of X" 
+            "TransactionDesc"=> "Payment of Donation" 
         );
 
         $data_entry = json_encode($curl_post_data);
