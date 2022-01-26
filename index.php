@@ -38,7 +38,10 @@
             <label for="amount" class="sr-only">Amount</label>
             <input type="number" name="amnt" class="form-control" placeholder="Amount." required autofocus>
             <label for="phone" class="sr-only">Phone number</label>
-            <input type="tel" name="phone" class="form-control" placeholder="Mpesa phone number." required>                
+            <input type="tel" name="phone" class="form-control" placeholder="Mpesa phone number." required> 
+            <div class="alert alert-warning" role="alert">
+              Any amount sent goes to Safaricom's Sandbox PAYBILL
+            </div>               
             <!-- <button class="btn btn-lg btn-success btn-block" type="submit">Donate</button> -->
             <input type="submit" value="Donate" class="btn btn-lg btn-success btn-block" name="submit"> 
             <p class="mt-5 mb-3 text-muted">&copy;ROOM 004 2021-2022</p>
