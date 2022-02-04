@@ -1,7 +1,7 @@
 
 <?php
-    $consumerKey = 'WaRQCn3BCRSAIv4MLTiQ71IXQd7YsrwX'; //Fill with your app Consumer Key
-    $consumerSecret = 'r3aHi1G2PMaq2w5L'; // Fill with your app Secret
+    $consumerKey = getenv('CC_CONSUMER_KEY'); //Fill with your app Consumer Key
+    $consumerSecret = getenv('CC_CONSUMER_SECRET'); // Fill with your app Secret
 
     $headers = ['Content-Type:application/json; charset=utf8'];
 
