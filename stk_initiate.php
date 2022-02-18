@@ -20,7 +20,7 @@
             "PartyA"=> $phone,
             "PartyB"=> 174379,
             "PhoneNumber"=> $phone,
-            "CallBackURL"=> "https://mpesa-donate.herokuapp.com/callback.php",
+            "CallBackURL"=> "https://mpesa-donate-app.herokuapp.com/callback.php",
             "AccountReference"=> "CompanyXLTD",
             "TransactionDesc"=> "Payment of Donation" 
         );
