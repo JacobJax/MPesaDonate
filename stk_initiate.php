@@ -2,7 +2,6 @@
 <?php
 
     require "getAccesToken.php";
-    // echo $access_token;
 
     if(isset($_POST["submit"])){
         $phone = $_POST["phone"];
